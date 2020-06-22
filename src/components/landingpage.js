@@ -11,7 +11,7 @@ class Landingpage extends Component{
                     <Cell col={4}>
                         <img src={require('./images/2.png')} alt="portofolio" className="avatar-img"/>
                     </Cell>
-                    <Cell col={7}><div className="banner-text"><h1>Hi, I'm Nano! <span>🐆</span></h1><h4>I majored in computer science and data science at University of Western Australia(UWA).
+                    <Cell col={7}><div className="banner-text"><h1>Hi, I'm Nano! </h1><h4>I majored in computer science and data science at University of Western Australia(UWA).
                         I believe that a good product design is always inspired by real life. My dream is to design customized app for customers in software level. If people ask me that if you
                         are turned into an animal, what do you what to be? I would say cheetah without a doubt beacuse its fast, resolute, and accurate. Hunting requires a very concentrated mind. Likewise, company needs efficiency, determination, and over-standard completion.
                         <hr/>
