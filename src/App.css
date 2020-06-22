@@ -26,13 +26,12 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5);
 }
 
 .banner-text{
-  background-color: white;
   width :75%;
   margin:auto;
   border-radius:10px;
   padding-top: 1em;
   height: 400px;
-  opacity: 92%;
+
 }
 
 .banner-text h1{
