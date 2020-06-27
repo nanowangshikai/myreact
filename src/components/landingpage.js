@@ -2,15 +2,18 @@ import React, {Component} from 'react';
 import {Grid,Cell} from 'react-mdl';
 import {Button} from 'react-bootstrap';
 import { Link} from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+AOS.init();
 
 class Landingpage extends Component{
     render(){
         return(
-            <div style={{width:'100%', margin:'auto'}}>
+            <div style={{width:'100%', margin:'auto'}} >
                 <Grid className="landing-grid">
                     <Cell col={1}></Cell>
                     <Cell col={4}>
-                        <img src={require('./images/2.png')} alt="portofolio" className="avatar-img"/>
+                        <img data-aos="fade-right" data-aos-duration="1500"  src={require('./images/2.png')} alt="portofolio" className="avatar-img"/>
                     </Cell>
                     <Cell col={7}><div className="banner-text"><h1>Hi, I'm Henry! <span role="img" aria-label="cheetah">🐆</span></h1><h4>I majored in computer science and data science at University of Western Australia(UWA).
                         I believe that a good product design is always inspired by real life. My dream is design personalised applications in accordance with customer demands. If people ask me that if you

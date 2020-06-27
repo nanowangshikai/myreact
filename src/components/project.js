@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import {Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText} from 'react-mdl';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+AOS.init();
 
 
 class Project extends Component{
@@ -13,7 +16,7 @@ class Project extends Component{
         return(
             <div className="projects-grid">
                  {/* Web project 1  */}
-                <Card shadow={5} style={{minWidth:'450', margin:'auto'}}>
+                <Card shadow={5} style={{minWidth:'450', margin:'auto'}} data-aos="fade-right" data-aos-duration="1500">
                 <CardTitle style={{color:'#fff', height:'175px',background: 'url(https://objects.ruanbekker.com/assets/images/python-flask.png) center / cover'  }}>Car Racing voting system</CardTitle>
                 <CardText>
                 A web application designed to rank the results of the worlds most popular cars.This website uses Python, Flask, and SQLite3 as back-end stores all votes for users and displayed as a bar chart in the front-end by HTML+CSS+Javascript.
@@ -29,7 +32,7 @@ class Project extends Component{
                 <div style={{marginBottom:'50px'}}></div>
 
                 {/* Web Project 2 */}
-                <Card shadow={5} style={{minWidth:'450', margin:'auto'}}>
+                <Card shadow={5} style={{minWidth:'450', margin:'auto'}} data-aos="fade-right" data-aos-duration="1500">
                 <CardTitle style={{color:'#fff', height:'175px',background: 'url(https://cdn.educba.com/academy/wp-content/uploads/2018/10/Top-Uses-Of-reactjs.jpg) center / cover'  }}>Personal Profolio</CardTitle>
                 <CardText>Mainly used javascript library React and the package manager "npm". In order to display the website gh-pages used to build and delopy. For React Components, React-MDL, React-Bootstrap and antd is used. </CardText>
                 <CardActions border>
@@ -43,8 +46,8 @@ class Project extends Component{
             
         )
     }else if(this.state.activeTab ===1){
-        return(<div>
-             <Card shadow={5} style={{minWidth:'450', margin:'auto'}}>
+        return(<div >
+             <Card shadow={5} style={{minWidth:'450', margin:'auto'}} >
                 <CardTitle style={{color:'#fff', height:'175px', background : 'url(https://en.pimg.jp/043/985/684/1/43985684.jpg)  center/ cover'}}>Transportation communication</CardTitle>
                 <CardText>User use this website to check train time-table and destination. This project is about communication between web-browser and station server. Client sending its traffic info using HTTP protocol. TCP communicate with browser and server. Different stations use UDP to communicate  </CardText>
                 <CardActions border>
