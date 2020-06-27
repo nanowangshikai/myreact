@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/myreact/static/css/main.df030da9.chunk.css",
-    "main.js": "/myreact/static/js/main.5155cd00.chunk.js",
-    "main.js.map": "/myreact/static/js/main.5155cd00.chunk.js.map",
+    "main.css": "/myreact/static/css/main.da3faf69.chunk.css",
+    "main.js": "/myreact/static/js/main.ed044a3c.chunk.js",
+    "main.js.map": "/myreact/static/js/main.ed044a3c.chunk.js.map",
     "runtime-main.js": "/myreact/static/js/runtime-main.1b665307.js",
     "runtime-main.js.map": "/myreact/static/js/runtime-main.1b665307.js.map",
-    "static/css/2.e4346227.chunk.css": "/myreact/static/css/2.e4346227.chunk.css",
-    "static/js/2.c9d413f1.chunk.js": "/myreact/static/js/2.c9d413f1.chunk.js",
-    "static/js/2.c9d413f1.chunk.js.map": "/myreact/static/js/2.c9d413f1.chunk.js.map",
+    "static/css/2.69cc870e.chunk.css": "/myreact/static/css/2.69cc870e.chunk.css",
+    "static/js/2.e1e461a4.chunk.js": "/myreact/static/js/2.e1e461a4.chunk.js",
+    "static/js/2.e1e461a4.chunk.js.map": "/myreact/static/js/2.e1e461a4.chunk.js.map",
     "index.html": "/myreact/index.html",
-    "precache-manifest.fa5f32705362eab7b86d33e4ccd5621b.js": "/myreact/precache-manifest.fa5f32705362eab7b86d33e4ccd5621b.js",
+    "precache-manifest.bcededa6088e7aea769ebd51e082b39b.js": "/myreact/precache-manifest.bcededa6088e7aea769ebd51e082b39b.js",
     "service-worker.js": "/myreact/service-worker.js",
-    "static/css/2.e4346227.chunk.css.map": "/myreact/static/css/2.e4346227.chunk.css.map",
-    "static/css/main.df030da9.chunk.css.map": "/myreact/static/css/main.df030da9.chunk.css.map",
-    "static/js/2.c9d413f1.chunk.js.LICENSE.txt": "/myreact/static/js/2.c9d413f1.chunk.js.LICENSE.txt",
+    "static/css/2.69cc870e.chunk.css.map": "/myreact/static/css/2.69cc870e.chunk.css.map",
+    "static/css/main.da3faf69.chunk.css.map": "/myreact/static/css/main.da3faf69.chunk.css.map",
+    "static/js/2.e1e461a4.chunk.js.LICENSE.txt": "/myreact/static/js/2.e1e461a4.chunk.js.LICENSE.txt",
     "static/media/1.svg": "/myreact/static/media/1.393207e1.svg",
     "static/media/2.png": "/myreact/static/media/2.1e11c870.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1b665307.js",
-    "static/css/2.e4346227.chunk.css",
-    "static/js/2.c9d413f1.chunk.js",
-    "static/css/main.df030da9.chunk.css",
-    "static/js/main.5155cd00.chunk.js"
+    "static/css/2.69cc870e.chunk.css",
+    "static/js/2.e1e461a4.chunk.js",
+    "static/css/main.da3faf69.chunk.css",
+    "static/js/main.ed044a3c.chunk.js"
   ]
 }
