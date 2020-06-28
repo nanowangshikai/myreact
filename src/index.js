@@ -7,11 +7,14 @@ import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 
 import { BrowserRouter } from 'react-router-dom';
+import './i18n'
 
 ReactDOM.render(
+
   <BrowserRouter>
   <App />
   </BrowserRouter>
+
   ,
   document.getElementById('root')
 );

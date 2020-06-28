@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {Grid, Cell, List, ListItem, ListItemContent} from 'react-mdl';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import {Translation} from 'react-i18next';
+
 AOS.init();
 
 class Contact extends Component{
@@ -9,10 +11,14 @@ class Contact extends Component{
         return(
             <div className="contact-body" style={{display:"block"}}>
                 <Grid className="contact-grid">
+                    
                     <Cell col={6} >
-                        <h4>Full Stack Web Developer</h4>
-                        <img data-aos="zoom-in" data-aos-duration="1500"  className="contact_img" src={require('./images/1.svg')} alt="working man" style={{height:"250px" }} ></img>
-                        <ul className="tool_list" data-aos="zoom-out-up" data-aos-duration="1500">
+                    <Translation>
+                            {
+                                (t, { i18n }) => <h4>{t('contact_header')}</h4>}
+                    </Translation>
+                                <img data-aos="zoom-in" data-aos-duration="1500"  className="contact_img" src={require('./images/1.svg')} alt="working man" style={{height:"250px" }} ></img>
+                        <ul className="tool_list" data-aos="zoom-out" data-aos-duration="1500">
                         <li className="contact_icon"><i class="fab fa-html5"></i><p>html-5</p></li> 
                         <li className="contact_icon"><i class="fab fa-js"></i><p>js</p></li> 
                         <li className="contact_icon"><i class="fab fa-react"></i><p>reactjs</p></li>
@@ -31,7 +37,14 @@ class Contact extends Component{
                         <p><span img>🖊</span> Experienced of various DBMS technology like MySQL, MySQLite3 with python-flask</p>
                        <p><span img>🖊</span> Familiar with application network protocols between clients and servers.</p>
                     </div> */}
-                    <h4>Contact Me</h4>
+
+                    <Translation>
+                            {
+                                (t, { i18n }) => <h4>{t('contact')}</h4>}
+                    </Translation>
+                                 
+                            
+                        
                     <hr/>
 
                     <div className="contact-list" >
@@ -70,7 +83,8 @@ class Contact extends Component{
 
                     </Cell>
                     
-        
+                
+
                     
                 </Grid>
             </div>

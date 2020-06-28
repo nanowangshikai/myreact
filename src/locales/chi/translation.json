@@ -1,0 +1,22 @@
+{
+    "title" : "菜单",
+    "header1": "主页",
+    "header2" : "项目",
+    "header3" : "联系方式",
+    "landingpage" : "你好, 我是Henry!",
+    "langdingpage_body" : "我是一名西澳大学刚毕业的应届生，本科四年攻读计算机和数据分析专业，目前想从事全栈工程师或后端开发工作，一个好的设计师必须要了解自己业务系统，从底层基础架构到数据中间件，到API逻辑，到Web和Mobile实现，到UX和UI，到产品逻辑，到部署和发布计划。所以在以后的学习生涯需要不断的提升自己接触了解新科技！ 以后的理想是为公司设计个性化APP，打造IOT云品台。",
+    "landingpage_button1" : "联系我",
+    "landingpage_button2" : "简历",
+    "contact_header" : "全栈工程师",
+    "contact" : "联系方式",
+    "project_web" : "投票系统",
+    "project_web_info" : "网站用于投票澳洲最受欢迎的跑车，用户信息管理分为三个不同层级分别为：1.只能观看投票者，2.通过登陆可以进行投票，3.管理员模式. 本网站通过前端和后端Python+Flask框架+SQLite3搭建",
+    "project_web2" : "个人简历",
+    "project_web2_info" : "主要利用JavaScript里面的React库搭建外加软件包管理器'npm'. 在GitHub上部署用的是gh-pages以及其他部件包括React-MDL, React-BootStrap, Ant Design 和 AOS进行渲染 ",
+    "project_python" : "模拟交通站点通信",
+    "project_python_info" : "用户通过浏览器查询火车到达时间，系统会对请求进行处理并返回预计到达目的地时间，浏览器通过TCP和HTTP协议与服务器进行访问和接收信息，通过UDP协议进行站点与站点之间的信息收发",
+    "project_opengl" : "平面设计和动画",
+    "project_opengl_info" : "此项目OpenGL环境由导师提供，在场景编辑器里通过目标的管理对其进行改变例如：物体的状态，颜色，I/O接入互动，物体的环境光色、发射光色、漫射光色和反射光色进行编辑",
+    "project_java" : "数据结构",
+    "project_java_info" : "学习链表，数列，栈，队列缩减时间复杂和空间复杂度并利用算法去提高实际运行的运算效率例如戴克斯特拉算法，A星算法，动态规划等"
+}

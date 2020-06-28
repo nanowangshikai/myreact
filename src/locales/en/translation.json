@@ -1,0 +1,22 @@
+{
+    "title" : "Menu Bar",
+    "header1": "Home",
+    "header2" : "Project",
+    "header3" : "Contact",
+    "landingpage" : "Hi, I'm Henry!",
+    "langdingpage_body" : "I majored in computer science and data science at University of Western Australia(UWA). I believe that a good product design is always inspired by real life. My dream is design personalised applications in accordance with customer demands. If people ask me that if you are turned into an animal, what do you what to be? I would say cheetah without a doubt beacuse its fast, resolute, and accurate. Hunting requires a very concentrated mind. Likewise, company needs efficiency, determination, and over-standard completion.",
+    "landingpage_button1" : "Contact Me",
+    "landingpage_button2" : "Resume",
+    "contact_header" : "Full Stack Web Developer",
+    "contact" : "Contact Details",
+    "project_web" : "Car Racing voting system",
+    "project_web_info" : "A web application designed to rank the results of the worlds most popular cars.This website uses Python, Flask, and SQLite3 as back-end stores all votes for users and displayed as a bar chart in the front-end by HTML+CSS+Javascript.",
+    "project_web2" : "Personal Profolio",
+    "project_web2_info" : "Mainly used javascript library React and the package manager 'npm'. In order to display the website gh-pages used to build and delopy. For React Components, React-MDL, React-Bootstrap and antd is used.",
+    "project_python" : "Transportation communication",
+    "project_python_info" : "User use this website to check train time-table and destination. This project is about communication between web-browser and station server. Client sending its traffic info using HTTP protocol. TCP communicate with browser and server. Different stations use UDP to communicate",
+    "project_opengl" : "Graphics and Animation",
+    "project_opengl_info" : "In the simple scene editor allows a collection of objects to be arranged in a scene and various properties of them to be changed, such as colour, shininess and texture.",
+    "project_java" : "Data structure and AI",
+    "project_java_info" : "Array, Linked List, Stack, and Queue has learned so it can be effectively organzing data in a computer. I have also learned Data alogorithm such as Dijstra, A*, dynamic programming."
+}

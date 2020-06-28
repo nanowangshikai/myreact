@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText} from 'react-mdl';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import {Translation} from 'react-i18next';
+
 AOS.init();
 
 
@@ -16,25 +18,35 @@ class Project extends Component{
         return(
             <div className="projects-grid">
                  {/* Web project 1  */}
-                <Card shadow={5} style={{minWidth:'450', margin:'auto'}} data-aos="fade-right" data-aos-duration="1500">
-                <CardTitle style={{color:'#fff', height:'175px',background: 'url(https://objects.ruanbekker.com/assets/images/python-flask.png) center / cover'  }}>Car Racing voting system</CardTitle>
-                <CardText>
-                A web application designed to rank the results of the worlds most popular cars.This website uses Python, Flask, and SQLite3 as back-end stores all votes for users and displayed as a bar chart in the front-end by HTML+CSS+Javascript.
-                </CardText>
-                <CardActions border style={{}}>
-                <span role='img' aria-label="finger" style={{fontSize:"30px"}}>👉🏻</span><a href="https://github.com/nanowangshikai/JavascriptProject"><Button colored>GitHub</Button></a>
-                </CardActions>
-                <CardMenu style={{color:'#fff'}}>
-                    <IconButton name="share"/>
-                </CardMenu>
-                </Card>
+                 <Translation>
+                    {
+                        (t, { i18n }) => <Card shadow={5} style={{minWidth:'450', margin:'auto'}} data-aos="fade-right" data-aos-duration="1500">
+                        <CardTitle style={{color:'#fff', height:'175px',background: 'url(https://objects.ruanbekker.com/assets/images/python-flask.png) center / cover'  }}>{t('project_web')}</CardTitle>
+                        <CardText>
+                        {t('project_web_info')}
+                        </CardText>
+                        <CardActions border style={{}}>
+                        <span role='img' aria-label="finger" style={{fontSize:"30px"}}>👉🏻</span><a href="https://github.com/nanowangshikai/JavascriptProject"><Button colored>GitHub</Button></a>
+                        </CardActions>
+                        <CardMenu style={{color:'#fff'}}>
+                            <IconButton name="share"/>
+                        </CardMenu>
+                        </Card>
+                
+                
+                    }
+                </Translation>
 
                 <div style={{marginBottom:'50px'}}></div>
-
+                
+                
                 {/* Web Project 2 */}
+                <Translation>
+                    {
+                        (t, { i18n }) =>
                 <Card shadow={5} style={{minWidth:'450', margin:'auto'}} data-aos="fade-right" data-aos-duration="1500">
-                <CardTitle style={{color:'#fff', height:'175px',background: 'url(https://cdn.educba.com/academy/wp-content/uploads/2018/10/Top-Uses-Of-reactjs.jpg) center / cover'  }}>Personal Profolio</CardTitle>
-                <CardText>Mainly used javascript library React and the package manager "npm". In order to display the website gh-pages used to build and delopy. For React Components, React-MDL, React-Bootstrap and antd is used. </CardText>
+                <CardTitle style={{color:'#fff', height:'175px',background: 'url(https://cdn.educba.com/academy/wp-content/uploads/2018/10/Top-Uses-Of-reactjs.jpg) center / cover'  }}>{t('project_web2')}</CardTitle>
+                    <CardText>{t('project_web2_info')}</CardText>
                 <CardActions border>
                 <span role='img' aria-label="finger" style={{fontSize:"30px"}}>👉🏻</span><a href="https://github.com/nanowangshikai/myreact"><Button colored>GitHub</Button></a>
                 </CardActions>
@@ -42,14 +54,20 @@ class Project extends Component{
                     <IconButton name="share"/>
                 </CardMenu>
                 </Card>
+                    }
+                </Translation>
+
             </div>
             
         )
     }else if(this.state.activeTab ===1){
         return(<div >
+            <Translation>
+                    {
+                        (t, { i18n }) =>
              <Card shadow={5} style={{minWidth:'450', margin:'auto'}} >
-                <CardTitle style={{color:'#fff', height:'175px', background : 'url(https://en.pimg.jp/043/985/684/1/43985684.jpg)  center/ cover'}}>Transportation communication</CardTitle>
-                <CardText>User use this website to check train time-table and destination. This project is about communication between web-browser and station server. Client sending its traffic info using HTTP protocol. TCP communicate with browser and server. Different stations use UDP to communicate  </CardText>
+                <CardTitle style={{color:'#fff', height:'175px', background : 'url(https://en.pimg.jp/043/985/684/1/43985684.jpg)  center/ cover'}}>{t('project_python')}</CardTitle>
+                <CardText>{t('project_python_info')}</CardText>
                 <CardActions border>
                 <span role='img' aria-label="finger" style={{fontSize:"30px"}}>👉🏻</span><a href="https://github.com/nanowangshikai/NetworkProject"><Button colored>GitHub</Button></a>
                 </CardActions>
@@ -57,11 +75,17 @@ class Project extends Component{
                     <IconButton name="share"/>
                 </CardMenu>
                 </Card>
+                }
+                </Translation>
         </div>)
     }else if(this.state.activeTab === 2){
-        return(<div><Card shadow={5} style={{minWidth:'450', margin:'auto'}}>
-        <CardTitle style={{color:'#fff', height:'175px', background : 'url(https://profi-user.ru/wp-content/uploads/2017/08/opengl_demo.png)  center/ cover'}}>Graphics and Animation</CardTitle>
-        <CardText>In the simple scene editor allows a collection of objects to be arranged in a scene and various properties of them to be changed, such as colour, shininess and texture. </CardText>
+        return(<div>
+        <Translation>
+                    {
+                        (t, { i18n }) =>
+        <Card shadow={5} style={{minWidth:'450', margin:'auto'}}>
+        <CardTitle style={{color:'#fff', height:'175px', background : 'url(https://profi-user.ru/wp-content/uploads/2017/08/opengl_demo.png)  center/ cover'}}>{t('project_opengl')}</CardTitle>
+        <CardText>{t('project_opengl_info')} </CardText>
         <CardActions border>
         <span role='img' aria-label="finger" style={{fontSize:"30px"}}>👉🏻</span><a href="https://github.com/nanowangshikai/Graphics-and-Animation"><Button colored>GitHub</Button></a>
         </CardActions>
@@ -69,18 +93,23 @@ class Project extends Component{
             <IconButton name="share"/>
         </CardMenu>
         </Card>
+        }
+        </Translation>
         </div>)
     }else if(this.state.activeTab ===3){
-        return(<div><Card shadow={5} style={{minWidth:'450', margin:'auto'}}>
-        <CardTitle style={{color:'#fff', height:'175px', background : 'url(https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/FjpqrSFwSvGCTL3cCqPt)  center/ cover'}}>Data structure and AI</CardTitle>
-        <CardText>Array, Linked List, Stack, and Queue has learned so it can be effectively organzing data in a computer. I have also learned Data alogorithm such as Dijstra, A*, dynamic programming. </CardText>
+        return(<div><Translation>
+            {
+                (t, { i18n }) =><Card shadow={5} style={{minWidth:'450', margin:'auto'}}>
+        <CardTitle style={{color:'#fff', height:'175px', background : 'url(https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/FjpqrSFwSvGCTL3cCqPt)  center/ cover'}}>{t('project_java')}</CardTitle>
+        <CardText>{t('project_java_info')}</CardText>
         <CardActions border>
 
         </CardActions>
         <CardMenu style={{color:'#fff'}}>
             <IconButton name="share"/>
         </CardMenu>
-        </Card></div>)
+        </Card>}
+        </Translation></div>)
     }
    }
 
