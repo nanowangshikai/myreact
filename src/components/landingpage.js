@@ -17,7 +17,7 @@ class Landingpage extends Component{
                 <Grid className="landing-grid">
                     <Cell col={1}></Cell>
                     <Cell col={4}>
-                        <img data-aos="fade-right" data-aos-duration="1500"  src={require('./images/2.png')} alt="portofolio" className="avatar-img"/>
+                        <img data-aos="fade-right" data-aos-duration="1500"  src={require('./images/11.png')} alt="portofolio" className="avatar-img"/>
                     </Cell>
                     <Cell col={7}><div className="banner-text">
                         <Translation>
@@ -39,7 +39,9 @@ class Landingpage extends Component{
 
                         <div style={{marginBottom:"20px"}}></div>
                         <div className="contact">
-                            <Link to="./contact"><Button variant="outline-success" size='lg'>{t('landingpage_button1')}</Button></Link>
+
+                            <Link to="/contact"><Button variant="outline-success" size='lg'>{t('landingpage_button1')}</Button></Link>
+
                         <Button variant="outline-success" style={{marginLeft:"10px"}} size='lg'>{t('landingpage_button2')}</Button>
                         </div>
                                 </h4>

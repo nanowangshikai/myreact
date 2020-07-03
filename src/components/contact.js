@@ -4,6 +4,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'
 import {Translation} from 'react-i18next';
 
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faHtml5,faJs,faReact,faNode,faNpm,faPython,faJava,faGithub } from '@fortawesome/free-brands-svg-icons';
+
 AOS.init();
 
 class Contact extends Component{
@@ -17,16 +20,16 @@ class Contact extends Component{
                             {
                                 (t, { i18n }) => <h4>{t('contact_header')}</h4>}
                     </Translation>
-                                <img data-aos="zoom-in" data-aos-duration="1500"  className="contact_img" src={require('./images/1.svg')} alt="working man" style={{height:"250px" }} ></img>
+                        <img data-aos="zoom-in" data-aos-duration="1500"  className="contact_img" src={require('./images/1.svg')} alt="working man" style={{height:"250px" }} ></img>
                         <ul className="tool_list" data-aos="zoom-out" data-aos-duration="1500">
-                        <li className="contact_icon"><i class="fab fa-html5"></i><p>html-5</p></li> 
-                        <li className="contact_icon"><i class="fab fa-js"></i><p>js</p></li> 
-                        <li className="contact_icon"><i class="fab fa-react"></i><p>reactjs</p></li>
-                        <li className="contact_icon"><i class="fab fa-node"></i><p>nodejs</p></li>
-                        <li className="contact_icon"><i class="fab fa-npm"></i><p>npm</p></li>
-                        <li className="contact_icon"><i class="fab fa-python"></i><p>python</p></li>
-                        <li className="contact_icon"><i class="fab fa-java"></i><p>java</p></li>
-                        <li className="contact_icon"><i class="fab fa-github"></i><p>github</p></li>
+                        <li className="contact_icon"><FontAwesomeIcon icon={faHtml5}/><p>html-5</p></li> 
+                        <li className="contact_icon"><FontAwesomeIcon icon={faJs}/><p>js</p></li> 
+                        <li className="contact_icon"><FontAwesomeIcon icon={faReact}/><p>reactjs</p></li>
+                        <li className="contact_icon"><FontAwesomeIcon icon={faNode}/><p>nodejs</p></li>
+                        <li className="contact_icon"><FontAwesomeIcon icon={faNpm}/><p>npm</p></li>
+                        <li className="contact_icon"><FontAwesomeIcon icon={faPython}/><p>python</p></li>
+                        <li className="contact_icon"><FontAwesomeIcon icon={faJava}/><p>java</p></li>
+                        <li className="contact_icon"><FontAwesomeIcon icon={faGithub}/><p>github</p></li>
 
                         
                         </ul>
